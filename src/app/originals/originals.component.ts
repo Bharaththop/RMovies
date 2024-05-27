@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component, ElementRef, Input, Renderer2 } from '@angular/core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { PopUpServiceService as PopUpService } from '../pop-up-service/pop-up-service.service';
 import { PopupComponent } from '../popup/popup.component';
 
 @Component({
@@ -72,7 +71,7 @@ slideConfig={
   //   });
   // };
 
-  constructor(public popUpComp:PopUpService, public dialog: MatDialog, private renderer: Renderer2, private el: ElementRef) {}
+  constructor(public dialog: MatDialog, private renderer: Renderer2, private el: ElementRef) {}
   
 
   openDialog(slide: any): void {
@@ -93,13 +92,11 @@ slideConfig={
     if (this.overlayElement) {
       this.renderer.removeChild(this.el.nativeElement, this.overlayElement);
     }
-    this.popUpComp.remove(this);
     this.el.nativeElement.remove();
   }
 
   ngOnInit(){
     
-    this.popUpComp.add(this);
       // move element to bottom of page (just before </body>) so it can be displayed above everything else
       document.body.appendChild(this.el.nativeElement);
 
