@@ -10,7 +10,9 @@ import { routes } from './app.routes';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    
+  ],
   imports: [
     CommonModule,
     BrowserModule,
