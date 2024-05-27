@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #181818;
+    color: #ccc;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+
+footer {
+    padding: 20px;
+    background-color: #181818;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h4 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe input[type="email"] {
+    padding-left: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 7px;
+    flex: 1;
+    background-color: #fff8e1; /* Cream white background color */
+    color: #000; /* Black text color for better readability */
+    
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: #ff4500;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.link-column h4 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.link-column a {
+    display: block;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    color: #ccc;
+    margin-bottom: 5px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link-column a:hover {
+    color: #fff;
+}

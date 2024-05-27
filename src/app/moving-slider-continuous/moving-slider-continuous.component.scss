@@ -1,0 +1,90 @@
+
+
+
+.main-container{
+    background-color:  rgb(222, 207, 207);
+    margin: 0 0;
+
+}
+.slider-container {
+    // width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    // padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    margin: 0 25%;
+    background-color: white;
+    
+}
+
+.moving-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: moveSlider 10s linear infinite;
+    width: 400px;
+    box-sizing: border-box;
+    // width: 100%;
+    // left: 0%;
+    // overflow: hidden;
+}
+
+.movie {
+    flex-shrink: 0;
+    margin: 0 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background: linear-gradient(90deg, rgba(255,0,0,0.1) 0%, rgba(255,0,150,0.1) 100%);
+    border-right: 3px solid rgb(0, 255, 55);
+    border-radius: 8%;
+    height: 40px;
+    width: 50;
+    transition: transform 0.5s ease; 
+
+}
+
+.movie img {
+    max-width: 100%;
+    width: 30px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 3px;
+}
+
+.moving-p-tag {
+    margin-top: 10px;
+    font-size: 25px;
+    color:red;
+    font-weight:12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+
+/* Define the animation */
+@keyframes moveSlider {
+    0% {
+        transform: translateX(0%); /* Start from the right outside the container */
+    }
+    // 50%{
+    //     transform: translateX(100%);
+    // }
+    100% {
+        transform: translateX(60%); /* Move to the left outside the container */
+    }
+}
+

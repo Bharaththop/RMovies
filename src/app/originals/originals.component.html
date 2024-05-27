@@ -1,0 +1,16 @@
+<div class="carousal-container">
+    <div class="title">
+        <div class="tagline">
+            <h3>RMovies Originals</h3>
+            <h6>Smart Investment - Smart Profits</h6>
+        </div>
+        <a href="" >view all</a>
+    </div>
+    <ngx-slick-carousel  #slickModal="slick-carousel" class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides"
+        class="slide" (click)="openDialog(slide)">
+        <img src={{slide.img}} class ="img-style"/>
+        </div>
+    </ngx-slick-carousel>
+</div>
+

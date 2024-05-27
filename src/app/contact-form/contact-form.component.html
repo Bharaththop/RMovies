@@ -1,0 +1,50 @@
+<div class="form-container">
+    <h1>Data Collection Form</h1>
+    <form (ngSubmit)="onSubmit()" #dataForm="ngForm">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" required="true" [(ngModel)]="formData.firstName" >
+      <div *ngIf="dataForm.submitted && (formData.firstName?.invalid || !formData.firstName)" class="error-message">
+        First Name is required.
+      </div>
+  
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" [(ngModel)]="formData.lastName" required>
+      <div *ngIf="dataForm.submitted && (formData.lastName?.invalid || !formData.lastName)" class="error-message">
+        Last Name is required.
+      </div>
+  
+      <label for="projectName">Project Name</label>
+      <input type="text" id="projectName" name="projectName" [(ngModel)]="formData.projectName" required>
+      <div *ngIf="dataForm.submitted && (formData.projectName?.invalid || !formData.projectName)" class="error-message">
+        Project Name is required.
+      </div>
+  
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" [(ngModel)]="formData.email"  required email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+      <div *ngIf="dataForm.submitted && formData.email?.errors?.pattern  " class="error-message">
+        Email Name is required.
+      </div>
+  
+      <label for="phoneNumber">Phone Number</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="formData.phoneNumber" required phoneNumber pattern="^\d{10}$">
+      <div *ngIf="dataForm.submitted && (formData.phoneNumber?.invalid || !formData.phoneNumber)" class="error-message">
+        Phone Name is required.
+      </div>
+  
+      <label for="description">Description</label>
+      <textarea id="description" name="description" rows="10" [(ngModel)]="formData.description" required></textarea>
+        
+      <div class="form-buttons">
+        <button type="submit">Submit</button>
+        <button type="button" (click)="onCancel()">Cancel</button>
+      </div>
+    </form>
+    <!-- <div id="submitted" [ngClass]="{ 'disabled': isFormSubmitted }">
+        <ng-container *ngIf="isFormSubmitted">
+            <h4>Your data is Successfully submitted </h4>
+            Return to
+        <a href="homePage">Home Page</a>
+          </ng-container>
+      </div> -->
+  </div>
+  

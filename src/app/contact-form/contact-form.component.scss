@@ -1,0 +1,92 @@
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-family: 'Fredoka One', cursive;
+  }
+  .form-container h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000; /* Make the title black */
+    font-weight: bold; /* Make the title bold */
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    font-family: 'Roboto', sans-serif;
+    // padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: calc(100% - 22px); /* Adjusting for padding and border */
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button[type="submit"],
+  button[type="button"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 48%; /* Make buttons take equal width */
+  }
+
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button[type="button"] {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #e53935;
+  }
+  

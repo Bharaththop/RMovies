@@ -1,0 +1,168 @@
+.highliters{
+    padding: 28px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  rgb(222, 207, 207);
+    gap: 15px;
+}
+.highlighter{
+    position: relative;
+    // overflow: hidden;
+    width: 100vw;
+    height: 50vh;
+    
+}
+.rounded-image{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    background-color:rgb(245, 225, 225);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    z-index: 2;
+    position: absolute;
+
+}
+.rounded-image img{
+    width: 70%;
+    height: fit-content;
+    object-fit: contain;
+    z-index: 2;
+
+}
+.squared-details{
+    
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 45px;
+    // padding-bottom: auto;
+    width:350px;
+    height:230px;
+    background-color: rgb(248, 243, 243);
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    border-radius: 8%;
+
+
+}
+.squared-details a{
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+.decorated-h6 {
+    font-family: 'Raleway', sans-serif; /* Custom font */
+    font-size: 1.5rem; /* Font size */
+    font-weight: 600; /* Font weight */
+    color: #333; /* Text color */
+    background: linear-gradient(45deg, #ffcc00, #ff9900); /* Gradient background */
+    padding: 10px 20px; /* Padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+    text-align: center; /* Center text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Letter spacing */
+    position: relative; /* Relative position for pseudo-elements */
+    margin: 20px; /* Margin for spacing */
+    overflow: hidden; /* Overflow hidden for pseudo-elements */
+  }
+  
+  /* Adding pseudo-elements for extra decoration */
+  .decorated-h6::before,
+  .decorated-h6::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .decorated-h6::before {
+    top: 0;
+  }
+  
+  .decorated-h6::after {
+    bottom: 0;
+  }
+  
+  /* Hover effect for pseudo-elements */
+  .decorated-h6:hover::before,
+  .decorated-h6:hover::after {
+    transform: scaleX(1);
+  }
+
+
+.styled-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 0.5rem; /* rounded-lg equivalent */
+    font-size: 0.875rem; /* text-sm equivalent */
+    font-weight: 500; /* font-medium equivalent */
+    text-align: center;
+    color: #fff; /* text-white */
+    background: #3a3a3a; /* placeholder for metal background, adjust as needed */
+    height: 3rem; /* h-12 equivalent */
+    padding: 0 1rem; /* px-4 equivalent */
+    margin-top: 0.5rem; /* mt-2 equivalent */
+    width: 100%; /* w-full equivalent */
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .styled-button:hover {
+    background-color: #333; /* Adjust hover background color as needed */
+  }
+  
+  .styled-button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #1e293b, 0 0 0 4px #fff; /* focus-visible:ring-2 and focus-visible:ring-offset-2 equivalent */
+  }
+  
+  .styled-button:disabled {
+    pointer-events: none;
+    opacity: 0.5; /* disabled:opacity-50 equivalent */
+  }
+  
+  .styled-button.metal-background {
+    background: linear-gradient(145deg, #c4c4c4, #6c6c6c); /* Example gradient for metal effect */
+  }
+  
+  /* Example media query for responsiveness */
+  @media (max-width: 600px) {
+    .styled-button {
+      font-size: 0.75rem; /* Adjustments for smaller screens */
+      height: 2.5rem;
+    }
+  }
+
+  .styled-paragraph {
+    
+    font-size: 1.125rem; /* Font size */
+    font-style: italic;
+    line-height: 1.6; /* Line height for readability */
+    color: #333; /* Text color */
+    // background-color: #fff; /* Background color */
+    // padding: 15px 20px; /* Padding */
+    border-radius: 8px; /* Rounded corners */
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+    max-width: 600px; /* Maximum width for the paragraph */
+    margin: 20px; /* Margin for spacing */
+    // border-left: 4px solid #ff9900; /* Left border for a decorative touch */
+  }
+
+

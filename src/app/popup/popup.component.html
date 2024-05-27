@@ -1,0 +1,72 @@
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<div class="dialog-content">
+    <div class="close-icon" (click)="close()">
+        <img src="assets/images/close.png" alt="Close" >
+    </div>
+    <!-- <h1 mat-dialog-title>Item Details</h1> -->
+    <div mat-dialog-content class="image-details-class">
+        <div>
+        <h3 class="decorated-heading">POPULAR DETAILS</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo
+            felis tempor augue tristique, eget dignissim sapien ornare. Nullam vel
+            hendrerit metus, a interdum risus. Etiam commodo lorem arcu, a tempus
+            risus tempus sed. Proin ornare nec massa eget rhoncus. In rutrum
+            aliquet dui, et placerat est molestie id.
+        </p>
+        </div>
+        
+        <!-- <ngx-slick-carousel  #slickModal="slick-carousel" class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides"
+            class="slide">
+            <img src={{slide.img}} class ="img-style"/>
+            </div>
+        </ngx-slick-carousel> -->
+        <img [src]="data.img" alt="Item Image">
+    
+        
+    </div>
+    <div class="detail-labels-tag">
+        <div class="label">
+            <span class="label-value">MPC</span><br>
+            <span class="label-title">&#8377;22</span>
+        </div>
+        <div class="label">
+            <span class="label-value">Chart</span><br>
+            <span class="label-title">
+                <div class="graph-container">
+                    <svg width="80" height="30" viewBox="0 0 100 50">
+                        <path d="M10,40 Q50,10 90,10" stroke="#ff6600" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+            </span>
+        </div>
+        <div class="label">
+            <span class="label-value">Change</span><br>
+            <span class="label-title">
+                <div class="down-arrow-container">
+                    <div class="down-arrow"></div>
+                    <span class="percentage-label">22%</span>
+                </div>                
+            </span>
+        </div>
+        <div class="label">
+            <span class="label-value">Market Cap</span><br>
+            <span class="label-title">&#8377;50M</span>
+        </div>
+        <div class="label">
+            <span class="label-value">Volume</span><br>
+            <span class="label-title">&#8377;22M</span>
+        </div>
+    </div>
+    
+    <div class="buttons">
+        <button style="background-color: brown;color: aliceblue;height:30px;border-radius: 20px;;">BUY SHARES</button>
+        <button style="background-color: rgb(38, 0, 255);color: rgb(238, 241, 245);height: 30px;border-radius: 20px;border-color: none;">DETAILS</button>
+    </div>
+    
+  </div>
+  

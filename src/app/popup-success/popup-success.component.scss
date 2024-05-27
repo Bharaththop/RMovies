@@ -1,0 +1,80 @@
+.buttons{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+
+}
+.title{
+    font-family: 'Fredoka One', cursive;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+svg{
+
+     width: 40px;
+     height: 40px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 48%; /* Make buttons take equal width */
+    
+    
+
+
+}
+.success-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: scaleUp 0.5s ease forwards;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+  }
+  
+  .tick {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #00C853; /* Green color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tick svg {
+    width: 60%;
+    height: 60%;
+    fill: none;
+    stroke: #FFF; /* White color */
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  

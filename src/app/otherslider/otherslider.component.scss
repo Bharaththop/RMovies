@@ -1,0 +1,132 @@
+body {
+	margin: 0; 
+	padding: 0;
+	background: #021514;   
+    
+}
+.carousel{
+    height: 800px; 
+    perspective: 400px;
+	// margin-top: 5%;
+    background-color:  rgb(222, 207, 207);
+}
+.carousel .carousel-item {
+	width: 400px;
+	height: 500px;
+	box-shadow: 0 0 40px #61dafb, 0 0 40px #61dafb, 0 0 40px #61dafb;
+	animation: animate 2s infinite alternate;
+	border-radius: 15px;
+}
+
+@keyframes animate {
+    to {
+      box-shadow: 0 0 50px #61dafb, 0 0 50px #61dafb, 0 0 50px #61dafb;
+    }
+  }
+
+
+
+
+.detail-labels-tag{
+    position: absolute;
+    top: 93%;
+    z-index: 3;
+    // left: 34%;
+    
+}
+
+
+.detail-labels-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+
+.detail-labels-tag {
+    display: flex;
+    justify-content: space-between; /* Space out the divs */
+    padding:10px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.detail-labels-tag .label {
+    text-align: center; /* Center text within each div */
+    margin: 0 10px; /* Margin between label divs */
+}
+
+.label-title {
+    font-weight: bold; /* Bold for emphasis */
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #333; /* Darker color for titles */
+}
+
+.label-value {
+    font-weight: normal; /* Normal weight for values */
+    font-size: 1em; /* Standard font size */
+    color: #666; /* Lighter color for values */
+}
+
+// .detail-labels-tag .label {
+//     flex: 1; /* Allow labels to take up equal space */
+// }
+
+.detail-labels-tag .label span {
+    display: block; /* Ensure each part is on a new line */
+}
+
+.graph-container {
+    display: inline-block; /* Ensure it doesn't take full width */
+    // padding: 10px;
+    background-color: #f0f0f0; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners for container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+svg {
+    display: block;
+    margin: 0 auto; /* Center the SVG */
+}
+
+.down-arrow-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Choose a font for the label */
+}
+
+.down-arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #ff0000; /* Red color for the arrow */
+    margin-right: 5px; /* Space between arrow and text */
+}
+
+.percentage-label {
+    font-size: 1em;
+    color: #ff0000; /* Red color for the text */
+}
+
+.carousel-item img {
+    width: 385px;
+    height: auto;
+    object-fit: contain; /* This will ensure the image covers the dimensions without distortion */
+}
+
+
+h6{
+    width: 100%;
+    font-size: 25px;
+    gap: 2px;
+    font-weight: 300;
+    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+    // display: flex;
+    // justify-content: center;
+
+}

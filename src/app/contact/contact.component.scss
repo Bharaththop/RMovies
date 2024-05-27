@@ -1,0 +1,65 @@
+/* General styles for the container */
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem; /* Adjust the gap between blocks */
+    padding: 1.5rem; /* Add padding around the container */
+    background-color:  rgb(222, 207, 207);
+}
+
+/* Responsive grid for larger screens */
+@media (min-width: 768px) {
+    .contacts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Styling each block */
+.block {
+    background-color: rgb(244, 238, 238);
+    border: 1px solid #b2b2b2;
+    border-radius: 0.5rem; /* Adjust the radius as needed */
+    padding: 1.5rem; /* Add padding inside the block */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Styling the text content */
+.matter h4 {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.matter p {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    color: #555;
+    font-family: 'Comic Neue', cursive;
+}
+
+/* Styling the links */
+.block a {
+    margin-top: 1rem; /* Space between content and link */
+    padding: 0.75rem 1.5rem; /* Padding inside the link */
+    background-color: #007bff; /* Link background color */
+    color: white;
+    text-align: center;
+    border-radius: 0.25rem; /* Rounded corners for the link */
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    font-family: 'Comic Neue', cursive;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+.block a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

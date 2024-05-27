@@ -1,0 +1,19 @@
+<div class="carousal-container">
+    <div class="title">
+        <div class="tagline">
+            <h3>Latest Movies</h3>
+            <h6>Nearly Funded</h6>
+        </div>
+        <a href="#5489" >view all</a>
+    </div>
+    <ngx-slick-carousel  #slickModal="slick-carousel" class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides"
+        class="slide" (click)="openDialog(slide)">
+        <img src={{slide.img}} class ="img-style"/>
+        </div>
+    </ngx-slick-carousel>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+</div>
+
+

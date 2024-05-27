@@ -1,0 +1,182 @@
+/* Global styles.css or styles.scss */
+
+.mat-dialog-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    // margin-top: 10px; /* Adjust as needed */
+  }
+  
+  .buttons button {
+    margin: 0 10px; /* Add some spacing between buttons */
+    min-width: 120px; /* Set a minimum width for buttons */
+    height: 20px;
+  }
+  
+  .dialog-content {
+    position: relative;
+    overflow: hidden;
+    width: 750px; /* Set your desired width */
+    height: 650px; /* Set your desired height */
+    background-color: #f8eeee;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .image-details-class img {
+    width: 350px;
+    min-width: 350px;
+    height: 350px;
+    object-fit: fill; /* Ensures the image maintains aspect ratio */
+    border-radius: 8px;
+    margin-top: 22px;
+  }
+
+//   .img-style{
+    
+//     height: 315px;
+//     width: 300px;
+//     object-fit:fill;
+//     border-radius: 30px !important;
+//     cursor: pointer;
+
+// }
+
+  .close-icon {
+    position: absolute;
+    top: 10px; /* Adjust as needed for positioning */
+    right: 10px; /* Adjust as needed for positioning */
+    cursor: pointer;
+  }
+  
+  .close-icon img{
+    width: 20px;
+    height: 20px;
+    z-index:1;
+
+  }
+.detail-labels-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+}
+.image-details-class{
+    display: flex;
+    overflow: hidden;
+    gap: 10px;
+    max-height:fit-content;
+}
+
+.detail-labels-tag {
+    display: flex;
+    justify-content: space-between; /* Space out the divs */
+    padding:10px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.detail-labels-tag .label {
+    text-align: center; /* Center text within each div */
+    margin: 0 10px; /* Margin between label divs */
+}
+
+.label-title {
+    font-weight: bold; /* Bold for emphasis */
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #333; /* Darker color for titles */
+}
+
+.label-value {
+    font-weight: normal; /* Normal weight for values */
+    font-size: 1em; /* Standard font size */
+    color: #666; /* Lighter color for values */
+}
+
+// .detail-labels-tag .label {
+//     flex: 1; /* Allow labels to take up equal space */
+// }
+
+.detail-labels-tag .label span {
+    display: block; /* Ensure each part is on a new line */
+}
+
+.graph-container {
+    display: inline-block; /* Ensure it doesn't take full width */
+    // padding: 10px;
+    background-color: #f0f0f0; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners for container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+svg {
+    display: block;
+    margin: 0 auto; /* Center the SVG */
+}
+
+.down-arrow-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Choose a font for the label */
+}
+
+.down-arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #ff0000; /* Red color for the arrow */
+    margin-right: 5px; /* Space between arrow and text */
+}
+
+.percentage-label {
+    font-size: 1em;
+    color: #ff0000; /* Red color for the text */
+}
+
+.decorated-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    text-align: center;
+    // margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 0px;
+    border: 2px solid #f06595;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+// .detail-labels-tag {
+//   position: relative;
+//   animation: moveText 5s linear infinite; /* Adjust duration as needed */
+// }
+
+// @keyframes moveText {
+//   0% {
+//     left: -100%;
+//   }
+//   100% {
+//     left: 100%;
+//   }
+// }
+
+
+
+
