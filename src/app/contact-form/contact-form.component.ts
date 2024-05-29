@@ -63,7 +63,7 @@ export class ContactFormComponent {
 
   onCancel() {
     // Redirect to a home page or any other page on cancel
-    this.router.navigate(['homepage']);
+    this.router.navigate(['']);
   }
   openDialog(): void {
     document.body.style.overflow = 'hidden'; 
