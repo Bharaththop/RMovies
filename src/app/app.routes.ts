@@ -12,7 +12,7 @@ import { SliderComponent } from './slider/slider.component';
 
 export const routes: Routes = [
 {path:"home",component:OriginalsComponent},
-{path:"homepage",component:SliderComponent},
+{path:"",component:SliderComponent},
 {path:"popup",component:PopupComponent},
 {path:"highlighters",component:HighlightersComponent},
 {path:"movingslider",component:MovingSliderContinuousComponent},
