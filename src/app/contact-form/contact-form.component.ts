@@ -46,7 +46,7 @@ export class ContactFormComponent {
     this.formData1.projectName=this.formData.projectName;
     this.formData1.description=this.formData.description;
     
-    this.http.post('http://localhost:8080/sendMail', this.formData1)
+    this.http.post('https://rmovies-backend.onrender.com/sendMail', this.formData1)
       .subscribe(response => {
         console.log('Form submission successful', response);
         // Redirect to a success page after form submission
